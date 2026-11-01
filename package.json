@@ -1,0 +1,14 @@
+{
+  "name": "logflow",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev -w server\" \"npm run dev -w web\""
+  },
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
